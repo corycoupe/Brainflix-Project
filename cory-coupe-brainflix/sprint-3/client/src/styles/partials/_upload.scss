@@ -1,0 +1,197 @@
+.upload {
+  &__title {
+    @include font($mobile-h1-header, $paragraph-text);
+    font-family: $bold-text;
+    padding-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  &__input {
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 2.5rem;
+  }
+  &__thumbnail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  &__thumbnail-text {
+    display: flex;
+    font-size: $mobile-h5-labels;
+    color: $text-label;
+    font-family: $regular-text;
+  }
+  &__thumbnail-img {
+    display: flex;
+    width: 18rem;
+    height: 9.563rem;
+    margin-bottom: 2rem;
+  }
+
+  &__input-title {
+    font-size: $mobile-h5-labels;
+    color: $text-label;
+    font-family: $regular-text;
+  }
+  .text-field {
+    border-radius: 4px;
+    border: solid 2px $text-color-alt;
+    font-family: $regular-text;
+    color: $paragraph-text;
+    font-size: $mobile-h4-paragraph;
+    background-color: $text-background-fill;
+    padding: 0.7rem 0.7rem;
+    margin-top: 0.2rem;
+    width: 100%;
+  }
+  .text-field:focus {
+    border-color: $brainflix-lightblue;
+    outline: none;
+  }
+  &__input-text-input {
+    margin-bottom: 1.5rem;
+  }
+  &__input-text-field {
+    height: 143px;
+  }
+  &__buttons {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  &__buttons-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    background-color: $brainflix-lightblue;
+    color: $text-background-fill;
+    font-family: $demi-text;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    border: none;
+    box-shadow: none;
+  }
+  &__buttons-btn--cancel {
+    background-color: white;
+    color: $brainflix-blue;
+  }
+}
+
+@include tablet {
+  .upload {
+    &__title {
+      font-size: $h1-header;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid $text-color-alt;
+    }
+    &__input {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 2px solid $text-color-alt;
+    }
+    &__input-title {
+      font-size: $h5-labels;
+    }
+    &__thumbnail-text {
+      font-size: $h5-labels;
+      margin-top: 2.5rem;
+    }
+    &__thumbnail-img {
+      width: 21.5rem;
+      height: 11.438rem;
+      margin-bottom: 2.5rem;
+    }
+    &__input-text-input {
+      width: 96%;
+    }
+    &__input-text-field {
+      width: 96%;
+    }
+    &__buttons {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      margin-top: 2.5rem;
+    }
+    &__buttons-btn {
+      width: 10rem;
+      margin-left: 0;
+    }
+  }
+}
+
+@include desktop {
+  .upload {
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: flex-start;
+    // padding-top: 2.5rem;
+    // padding-bottom: 2.5rem;
+    // border-top: 2px solid $text-color-alt;
+    // margin-left: 1rem;
+    // margin-right: 1rem;
+
+    &__title {
+      display: flex;
+      justify-content: center;
+      width: 33.5%;
+      border: 0;
+    }
+    &__card {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      width: 97%;
+      border-bottom: 2px solid $text-color-alt;
+      border-top: 2px solid $text-color-alt;
+    }
+    &__buttons {
+      width: 100%;
+    }
+    &__thumbnail {
+      width: 23%;
+      align-items: flex-start;
+      margin-right: 1.5rem;
+      justify-content: center;
+    }
+    &__input {
+      width: 56%;
+      margin-left: 0;
+      margin-bottom: 0;
+      border: 0;
+    }
+    &__input-text-field {
+      height: 5.875rem;
+    }
+    &__thumbnail-img {
+      margin-bottom: 0;
+    }
+    &__thumbnail-text {
+      margin-top: 0;
+    }
+    .text-field {
+      width: 100%;
+    }
+    &__buttons {
+      display: flex;
+      justify-content: flex-start;
+      width: 87.5%;
+    }
+  }
+}
